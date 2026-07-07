@@ -1,5 +1,6 @@
 qa/
 *.docx
+*.pdf
 build_proposal.py
 assets/geuneul-prototype.html
 .DS_Store
