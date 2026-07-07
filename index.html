@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>홍성주 | CODEGATE AI Startup Hackathon Portfolio</title>
+    <meta
+      name="description"
+      content="홍성주 CODEGATE 2026 AI 스타트업 해커톤 지원 포트폴리오. AI 에이전트, MCP, 위치 기반 MVP, 보안 중심 풀스택 프로젝트."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="홍성주 포트폴리오 홈">
+        <span class="brand-mark">HJ</span>
+        <span>홍성주</span>
+      </a>
+      <nav class="top-nav" aria-label="주요 섹션">
+        <a href="#fit">해커톤 적합성</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#mvp">제안 MVP</a>
+        <a href="#evidence">근거</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="소개">
+        <img class="hero-image" src="./assets/ssuai-dashboard.png" alt="ssuAI 대시보드 실제 화면" />
+        <div class="hero-scrim"></div>
+        <div class="hero-content">
+          <p class="eyebrow">CODEGATE 2026 AI Startup Hackathon Portfolio</p>
+          <h1>홍성주</h1>
+          <p class="hero-lead">
+            AI 에이전트, MCP 서버, 위치 기반 MVP, 보안 하드닝까지 직접 설계하고 배포한
+            풀스택 개발자입니다.
+          </p>
+          <div class="hero-actions" aria-label="주요 링크">
+            <a href="https://github.com/ghdtjdwn" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://ssuai.vercel.app" target="_blank" rel="noreferrer">Live ssuAI</a>
+            <a href="https://geuneul.vercel.app" target="_blank" rel="noreferrer">Live Geuneul</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-band" aria-label="핵심 지표">
+        <div class="stat">
+          <strong>52</strong>
+          <span>MCP tools implemented</span>
+        </div>
+        <div class="stat">
+          <strong>46,897</strong>
+          <span>geocoded public places live</span>
+        </div>
+        <div class="stat">
+          <strong>5</strong>
+          <span>live or deployable AI services</span>
+        </div>
+        <div class="stat">
+          <strong>77+</strong>
+          <span>architecture decisions documented</span>
+        </div>
+      </section>
+
+      <section id="fit" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Why I Fit CODEGATE</p>
+          <h2>아이디어보다 실행 가능성을 증명하는 포트폴리오</h2>
+          <p>
+            코드게이트 AI 스타트업 해커톤의 1차 심사는 기획서, 대표자 포트폴리오, 프로젝트
+            레퍼런스를 함께 본다. 그래서 이 사이트는 단순 소개가 아니라 MVP 구현력, 보안 감각,
+            AI 활용의 본질성을 바로 검토할 수 있게 구성했다.
+          </p>
+        </div>
+        <div class="fit-grid">
+          <article class="fit-item">
+            <span class="fit-kicker">AI Product</span>
+            <h3>AI를 화면 장식이 아니라 기능의 핵심에 둠</h3>
+            <p>
+              LangGraph 멀티에이전트, 공식 출처 기반 RAG, AI 자유서술 채점, 임베딩 게이트웨이처럼
+              모델 호출이 제품 동작을 바꾸는 프로젝트를 구현했다.
+            </p>
+          </article>
+          <article class="fit-item">
+            <span class="fit-kicker">MVP Speed</span>
+            <h3>48시간 안에 데모 가능한 범위를 자를 수 있음</h3>
+            <p>
+              지도, 챗봇, 키오스크, 미연시 학습 콘텐츠를 모두 작은 수직 슬라이스로 먼저 완성한 뒤
+              테스트와 배포를 붙였다.
+            </p>
+          </article>
+          <article class="fit-item">
+            <span class="fit-kicker">Security</span>
+            <h3>보안 요구를 기획 단계에서 반영</h3>
+            <p>
+              HITL 승인, fail-closed API key gate, CSRF origin guard, rate limit, thread ownership,
+              credential 암호화, 비밀 스캔을 실제 코드와 문서에 남겼다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-alt">
+        <div class="section-head split-head">
+          <div>
+            <p class="eyebrow">Selected Work</p>
+            <h2>대표 프로젝트</h2>
+          </div>
+          <div class="filters" aria-label="프로젝트 필터">
+            <button class="filter is-active" data-filter="all" type="button">전체</button>
+            <button class="filter" data-filter="ai" type="button">AI</button>
+            <button class="filter" data-filter="infra" type="button">Infra</button>
+            <button class="filter" data-filter="startup" type="button">MVP</button>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-tags="ai infra startup">
+            <img src="./assets/ssuai-dashboard.png" alt="ssuAI 대시보드 화면" />
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Flagship</span>
+                <span>Live</span>
+              </div>
+              <h3>숭실대 캠퍼스 AI 어시스턴트</h3>
+              <p>
+                ssuMCP, ssuAI, ssuAgent, ssu-ai-service로 구성된 멀티서비스 시스템. 학교 데이터를
+                MCP 표준 도구로 노출하고 웹 챗봇, Claude Desktop, Cursor에서 재사용한다.
+              </p>
+              <ul class="project-points">
+                <li>Spring Boot 4 MCP 서버, 52개 도구, REST와 MCP의 동일 서비스 레이어 공유</li>
+                <li>LangGraph 멀티에이전트, SSE 스트리밍, 도서관 예약 HITL 승인</li>
+                <li>k3s, ArgoCD, Helm, GitHub Actions, Grafana 운영</li>
+              </ul>
+              <div class="links">
+                <a href="https://github.com/ghdtjdwn/ssuMCP" target="_blank" rel="noreferrer">ssuMCP</a>
+                <a href="https://github.com/ghdtjdwn/ssuAI" target="_blank" rel="noreferrer">ssuAI</a>
+                <a href="https://github.com/ghdtjdwn/ssuAgent" target="_blank" rel="noreferrer">ssuAgent</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="infra startup">
+            <img src="./assets/geuneul-prototype.png" alt="그늘 모바일 지도 프로토타입 화면" />
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Location MVP</span>
+                <span>Live</span>
+              </div>
+              <h3>그늘 - 여름 생존 지도</h3>
+              <p>
+                폭염, 장마, 화장실, 냉방, 콘센트 문제를 현재 위치 기준으로 해결하는 모바일 PWA.
+                공공데이터와 유저 제보를 결합해 지금 갈만한 장소를 추천한다.
+              </p>
+              <ul class="project-points">
+                <li>PostGIS 반경 검색, kNN, bounds 조회와 GiST 인덱스 설계</li>
+                <li>공중화장실 59,768행 파서와 46,897건 지오코딩 적재</li>
+                <li>AWS ECS Fargate, RDS, Terraform, OIDC 배포 파이프라인</li>
+              </ul>
+              <div class="links">
+                <a href="https://geuneul.vercel.app" target="_blank" rel="noreferrer">Live App</a>
+                <a href="https://github.com/ghdtjdwn/geuneul" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="ai startup">
+            <img src="./assets/ddsc-game.png" alt="두근두근 자료구조 게임 플레이 화면" />
+            <div class="project-body">
+              <div class="project-meta">
+                <span>AI Learning</span>
+                <span>Contest</span>
+              </div>
+              <h3>두근두근 자료구조</h3>
+              <p>
+                자료구조를 미연시 구조로 배우는 AX 인터랙티브 콘텐츠. 대사는 사람이 쓰고 AI는
+                자유서술 답안을 채점만 하도록 제한해 오교육 위험을 낮췄다.
+              </p>
+              <ul class="project-points">
+                <li>AI 호출 지점을 자유서술 채점 하나로 제한한 grounded grader 설계</li>
+                <li>결정론 엔진이 호감도, 문제 순서, 엔딩을 소유해 LLM 오작동과 게임 로직 분리</li>
+                <li>엔진 불변식, 실제 시나리오 완주, E2E 테스트 포함</li>
+              </ul>
+              <div class="links">
+                <span class="private-note">Private repository</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="startup">
+            <img src="./assets/condorm-match.png" alt="con-dorm 룸메이트 매칭 모바일 화면" />
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Team Project</span>
+                <span>Mobile UI</span>
+              </div>
+              <h3>con-dorm - 기숙사 매칭 앱</h3>
+              <p>
+                기숙사 검색과 룸메이트 매칭을 결합한 학생 생활 앱. 프론트엔드 전체와 룸메이트
+                매칭 백엔드 도메인을 담당했다.
+              </p>
+              <ul class="project-points">
+                <li>Next.js 모바일 UI 9개 화면, mock과 실 API 전환 레이어</li>
+                <li>가중치 궁합 점수와 Irving Stable Roommates 자동 배정</li>
+                <li>FE/BE 점수 일치 테스트, API 계약서, 팀 도메인 경계 문서화</li>
+              </ul>
+              <div class="links">
+                <span class="private-note">Organization private repositories</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="mvp" class="section">
+        <div class="section-head">
+          <p class="eyebrow">CODEGATE Proposal</p>
+          <h2>제안 MVP: 케어보이스 AI</h2>
+          <p>
+            고령층, 장애인, 디지털 기기 사용이 익숙하지 않은 사용자가 키오스크 앞에서 말로 주문하고,
+            AI가 메뉴 의도를 구조화해 화면 조작을 안내하는 음성 기반 주문 보조 서비스다. 해커톤 당일
+            사전 제작 코드는 쓰지 않고, 신규 코드로 웹 키오스크와 AI 주문 파서를 구현하는 범위를 제안한다.
+          </p>
+        </div>
+        <div class="mvp-layout">
+          <div class="mvp-panel">
+            <h3>48시간 MVP 범위</h3>
+            <ol class="timeline">
+              <li>
+                <strong>Day 1</strong>
+                <span>키오스크 화면, 음성 입력, 메뉴 온톨로지, 주문 의도 JSON 추출</span>
+              </li>
+              <li>
+                <strong>Day 2</strong>
+                <span>확인 단계, 장바구니 자동 반영, 오류 복구, 개인정보 최소화, 데모 시나리오</span>
+              </li>
+            </ol>
+          </div>
+          <div class="mvp-panel">
+            <h3>보안 설계</h3>
+            <ul class="project-points">
+              <li>원본 음성 저장 금지, 임시 transcript만 처리</li>
+              <li>AI 출력은 Zod schema로 검증하고 허용된 메뉴/수량 action만 실행</li>
+              <li>결제나 최종 주문 전에는 사용자의 명시적 확인을 요구</li>
+              <li>API key는 서버 전용 환경변수로만 사용하고 브라우저에 노출하지 않음</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="evidence" class="section section-alt">
+        <div class="section-head">
+          <p class="eyebrow">Evidence Archive</p>
+          <h2>전체 프로젝트에서 확인한 역량</h2>
+        </div>
+        <div class="evidence-grid">
+          <article>
+            <h3>AI와 에이전트</h3>
+            <p>LangGraph, MCP, RAG, 임베딩 게이트웨이, AI grader, LLM fallback, HITL 승인.</p>
+          </article>
+          <article>
+            <h3>백엔드와 데이터</h3>
+            <p>Spring Boot, Java/Kotlin, FastAPI, PostgreSQL/PostGIS/pgvector, Redis, JPA, Flyway.</p>
+          </article>
+          <article>
+            <h3>프론트엔드</h3>
+            <p>Next.js, TypeScript, Tailwind, TanStack Query, PWA, 모바일 UX, 접근성 고려.</p>
+          </article>
+          <article>
+            <h3>운영과 보안</h3>
+            <p>Docker, k3s, ArgoCD, Helm, AWS ECS/RDS, Terraform, OIDC, gitleaks, rate limit.</p>
+          </article>
+          <article>
+            <h3>CS 기본기</h3>
+            <p>RISC-V 시뮬레이터, 인터프리터, POSIX 파일 도구, 네트워크 소켓, PyTorch 모델.</p>
+          </article>
+          <article>
+            <h3>해커톤 경험</h3>
+            <p>음성 키오스크 매크로, 팀 API 계약, 실시간 WebSocket/STT/TTS 연동 설계 경험.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>홍성주 · GitHub <a href="https://github.com/ghdtjdwn" target="_blank" rel="noreferrer">ghdtjdwn</a></p>
+      <p>Prepared for CODEGATE 2026 AI Startup Hackathon</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

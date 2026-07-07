@@ -1,0 +1,5 @@
+qa/
+*.docx
+build_proposal.py
+assets/geuneul-prototype.html
+.DS_Store
