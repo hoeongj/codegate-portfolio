@@ -17,7 +17,8 @@ Open `http://localhost:5173`.
 
 ## Main Assets
 
-- `assets/ssuai-dashboard.png` - ssuAI 실제 대시보드
+- `assets/ssuai-live-home.png` - ssuAI 최신 라이브 홈 화면
+- `assets/ssuai-live-chat.png` - ssuAI 최신 라이브 챗봇 화면
 - `assets/geuneul-prototype.png` - 그늘 모바일 지도 프로토타입 캡처
 - `assets/ddsc-game.png` - 두근두근 자료구조 실제 플레이
-- `assets/condorm-match.png` - con-dorm 룸메이트 매칭 화면
+- `assets/condorm-match.png` - 참 도미 룸메이트 매칭 화면

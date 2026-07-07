@@ -26,7 +26,7 @@
 
     <main id="top">
       <section class="hero" aria-label="소개">
-        <img class="hero-image" src="./assets/ssuai-dashboard.png" alt="ssuAI 대시보드 실제 화면" />
+        <img class="hero-image" src="./assets/ssuai-live-home.png" alt="ssuAI 최신 홈 화면" />
         <div class="hero-scrim"></div>
         <div class="hero-content">
           <p class="eyebrow">CODEGATE 2026 AI Startup Hackathon Portfolio</p>
@@ -38,7 +38,7 @@
           <div class="hero-actions" aria-label="주요 링크">
             <a href="https://github.com/ghdtjdwn" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://ssuai.vercel.app" target="_blank" rel="noreferrer">Live ssuAI</a>
-            <a href="https://geuneul.vercel.app" target="_blank" rel="noreferrer">Live Geuneul</a>
+            <a href="https://geuneul.vercel.app" target="_blank" rel="noreferrer">Live 그늘</a>
           </div>
         </div>
       </section>
@@ -104,7 +104,7 @@
         <div class="section-head split-head">
           <div>
             <p class="eyebrow">Selected Work</p>
-            <h2>대표 프로젝트</h2>
+            <h2>사용자 문제를 실제 서비스로 만든 대표 프로젝트</h2>
           </div>
           <div class="filters" aria-label="프로젝트 필터">
             <button class="filter is-active" data-filter="all" type="button">전체</button>
@@ -115,8 +115,8 @@
         </div>
 
         <div class="project-grid">
-          <article class="project-card" data-tags="ai infra startup">
-            <img src="./assets/ssuai-dashboard.png" alt="ssuAI 대시보드 화면" />
+          <article class="project-card" data-tags="ai infra startup" data-project="ssuai" tabindex="0">
+            <img src="./assets/ssuai-live-home.png" alt="ssuAI 최신 홈 화면" />
             <div class="project-body">
               <div class="project-meta">
                 <span>Flagship</span>
@@ -124,23 +124,32 @@
               </div>
               <h3>숭실대 캠퍼스 AI 어시스턴트</h3>
               <p>
-                ssuMCP, ssuAI, ssuAgent, ssu-ai-service로 구성된 멀티서비스 시스템. 학교 데이터를
-                MCP 표준 도구로 노출하고 웹 챗봇, Claude Desktop, Cursor에서 재사용한다.
+                Claude, ChatGPT 같은 범용 AI는 학교의 개인 시간표, 성적, LMS 과제, 도서관 대출·좌석
+                같은 데이터를 직접 다룰 수 없다. 이 프로젝트는 학교 데이터를 MCP 도구와 안전한 인증
+                세션으로 연결해, 웹 챗봇과 외부 AI 클라이언트가 실제 캠퍼스 업무를 수행하게 만든다.
               </p>
-              <ul class="project-points">
-                <li>Spring Boot 4 MCP 서버, 52개 도구, REST와 MCP의 동일 서비스 레이어 공유</li>
-                <li>LangGraph 멀티에이전트, SSE 스트리밍, 도서관 예약 HITL 승인</li>
-                <li>k3s, ArgoCD, Helm, GitHub Actions, Grafana 운영</li>
-              </ul>
-              <div class="links">
-                <a href="https://github.com/ghdtjdwn/ssuMCP" target="_blank" rel="noreferrer">ssuMCP</a>
-                <a href="https://github.com/ghdtjdwn/ssuAI" target="_blank" rel="noreferrer">ssuAI</a>
-                <a href="https://github.com/ghdtjdwn/ssuAgent" target="_blank" rel="noreferrer">ssuAgent</a>
+              <div class="project-insights">
+                <div class="insight-card">
+                  <span>사용자에게 제공</span>
+                  <p>학식, 공지, 도서관 좌석, 도서 검색, 시간표, 성적, 졸업요건, LMS 과제를 자연어로 조회.</p>
+                </div>
+                <div class="insight-card">
+                  <span>보여주는 기술력</span>
+                  <p>52개 MCP 도구, LangGraph 멀티에이전트, HITL 승인, k3s GitOps 운영과 보안 하드닝.</p>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="detail-button" data-detail="ssuai" type="button">자세히 보기</button>
+                <div class="links" aria-label="숭실대 캠퍼스 AI 어시스턴트 링크">
+                  <a href="https://ssuai.vercel.app" target="_blank" rel="noreferrer">Live</a>
+                  <a href="https://github.com/ghdtjdwn/ssuMCP" target="_blank" rel="noreferrer">MCP</a>
+                  <a href="https://github.com/ghdtjdwn/ssuAI" target="_blank" rel="noreferrer">Web</a>
+                </div>
               </div>
             </div>
           </article>
 
-          <article class="project-card" data-tags="infra startup">
+          <article class="project-card" data-tags="infra startup" data-project="geuneul" tabindex="0">
             <img src="./assets/geuneul-prototype.png" alt="그늘 모바일 지도 프로토타입 화면" />
             <div class="project-body">
               <div class="project-meta">
@@ -152,19 +161,27 @@
                 폭염, 장마, 화장실, 냉방, 콘센트 문제를 현재 위치 기준으로 해결하는 모바일 PWA.
                 공공데이터와 유저 제보를 결합해 지금 갈만한 장소를 추천한다.
               </p>
-              <ul class="project-points">
-                <li>PostGIS 반경 검색, kNN, bounds 조회와 GiST 인덱스 설계</li>
-                <li>공중화장실 59,768행 파서와 46,897건 지오코딩 적재</li>
-                <li>AWS ECS Fargate, RDS, Terraform, OIDC 배포 파이프라인</li>
-              </ul>
-              <div class="links">
-                <a href="https://geuneul.vercel.app" target="_blank" rel="noreferrer">Live App</a>
-                <a href="https://github.com/ghdtjdwn/geuneul" target="_blank" rel="noreferrer">GitHub</a>
+              <div class="project-insights">
+                <div class="insight-card">
+                  <span>사용자에게 제공</span>
+                  <p>내 주변 그늘, 냉방, 화장실, 콘센트, 비 피할 장소를 거리와 상황 기준으로 탐색.</p>
+                </div>
+                <div class="insight-card">
+                  <span>보여주는 기술력</span>
+                  <p>PostGIS 공간 검색, 4.6만 건 지오코딩 데이터, BFF 프록시, AWS/Terraform 배포.</p>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="detail-button" data-detail="geuneul" type="button">자세히 보기</button>
+                <div class="links" aria-label="그늘 링크">
+                  <a href="https://geuneul.vercel.app" target="_blank" rel="noreferrer">Live</a>
+                  <a href="https://github.com/ghdtjdwn/geuneul" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
               </div>
             </div>
           </article>
 
-          <article class="project-card" data-tags="ai startup">
+          <article class="project-card" data-tags="ai startup" data-project="ddsc" tabindex="0">
             <img src="./assets/ddsc-game.png" alt="두근두근 자료구조 게임 플레이 화면" />
             <div class="project-body">
               <div class="project-meta">
@@ -176,40 +193,109 @@
                 자료구조를 미연시 구조로 배우는 AX 인터랙티브 콘텐츠. 대사는 사람이 쓰고 AI는
                 자유서술 답안을 채점만 하도록 제한해 오교육 위험을 낮췄다.
               </p>
-              <ul class="project-points">
-                <li>AI 호출 지점을 자유서술 채점 하나로 제한한 grounded grader 설계</li>
-                <li>결정론 엔진이 호감도, 문제 순서, 엔딩을 소유해 LLM 오작동과 게임 로직 분리</li>
-                <li>엔진 불변식, 실제 시나리오 완주, E2E 테스트 포함</li>
-              </ul>
-              <div class="links">
-                <span class="private-note">Private repository</span>
+              <div class="project-insights">
+                <div class="insight-card">
+                  <span>사용자에게 제공</span>
+                  <p>스택, 큐, 트리, 그래프 같은 개념을 대화·선택지·퀴즈·엔딩 흐름으로 학습.</p>
+                </div>
+                <div class="insight-card">
+                  <span>보여주는 기술력</span>
+                  <p>LLM 채점 범위 제한, 결정론 게임 엔진, 시나리오 완주 테스트와 E2E 검증.</p>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="detail-button" data-detail="ddsc" type="button">자세히 보기</button>
+                <div class="links" aria-label="두근두근 자료구조 링크">
+                  <span class="private-note">Private repository</span>
+                </div>
               </div>
             </div>
           </article>
 
-          <article class="project-card" data-tags="startup">
-            <img src="./assets/condorm-match.png" alt="con-dorm 룸메이트 매칭 모바일 화면" />
+          <article class="project-card" data-tags="startup" data-project="chamdomi" tabindex="0">
+            <img src="./assets/condorm-match.png" alt="참 도미 룸메이트 매칭 모바일 화면" />
             <div class="project-body">
               <div class="project-meta">
-                <span>Team Project</span>
+                <span>Team 참 도미</span>
                 <span>Mobile UI</span>
               </div>
-              <h3>con-dorm - 기숙사 매칭 앱</h3>
+              <h3>참 도미 - 기숙사·룸메이트 매칭 앱</h3>
               <p>
-                기숙사 검색과 룸메이트 매칭을 결합한 학생 생활 앱. 프론트엔드 전체와 룸메이트
+                학생이 학교, 지역, 소득분위, 성적, 사회적 배려사항, 생활 습관을 입력하면 지원 가능한
+                기숙사와 적합한 룸메이트를 함께 찾는 학생 생활 서비스. 프론트엔드 전체와 룸메이트
                 매칭 백엔드 도메인을 담당했다.
               </p>
-              <ul class="project-points">
-                <li>Next.js 모바일 UI 9개 화면, mock과 실 API 전환 레이어</li>
-                <li>가중치 궁합 점수와 Irving Stable Roommates 자동 배정</li>
-                <li>FE/BE 점수 일치 테스트, API 계약서, 팀 도메인 경계 문서화</li>
-              </ul>
-              <div class="links">
-                <span class="private-note">Organization private repositories</span>
+              <div class="project-insights">
+                <div class="insight-card">
+                  <span>사용자에게 제공</span>
+                  <p>지원 가능 기숙사 목록, 비용·식사·거리·모집기간 비교, 룸메이트 궁합 점수와 채팅.</p>
+                </div>
+                <div class="insight-card">
+                  <span>보여주는 기술력</span>
+                  <p>Next.js 모바일 앱, mock/real API 전환, Spring 매칭 도메인, Stable Roommates 알고리즘.</p>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="detail-button" data-detail="chamdomi" type="button">자세히 보기</button>
+                <div class="links" aria-label="참 도미 링크">
+                  <span class="private-note">Organization private repositories</span>
+                </div>
               </div>
             </div>
           </article>
         </div>
+
+        <div class="live-link-board" aria-label="공개 라이브 연결">
+          <article>
+            <span>Live Service</span>
+            <h3>ssuAI</h3>
+            <p>숭실대 데이터를 자연어로 조회하는 웹 챗봇.</p>
+            <a href="https://ssuai.vercel.app" target="_blank" rel="noreferrer">열기</a>
+          </article>
+          <article>
+            <span>Live Service</span>
+            <h3>그늘</h3>
+            <p>현재 위치 주변 생활 대피 장소를 찾는 PWA.</p>
+            <a href="https://geuneul.vercel.app" target="_blank" rel="noreferrer">열기</a>
+          </article>
+          <article>
+            <span>Source</span>
+            <h3>GitHub</h3>
+            <p>대표 프로젝트 코드와 아키텍처 문서 확인.</p>
+            <a href="https://github.com/ghdtjdwn" target="_blank" rel="noreferrer">열기</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-detail" id="project-detail" aria-hidden="true">
+        <button class="detail-backdrop" type="button" data-close-detail aria-label="상세 닫기"></button>
+        <article class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title" tabindex="-1">
+          <button class="detail-close" type="button" data-close-detail aria-label="상세 닫기">X</button>
+          <div class="detail-layout">
+            <div>
+              <div class="project-meta" id="detail-meta"></div>
+              <h2 id="detail-title"></h2>
+              <p class="detail-lead" id="detail-lead"></p>
+              <div class="detail-links links" id="detail-links"></div>
+            </div>
+            <img id="detail-image" alt="" />
+          </div>
+          <div class="detail-card-grid" id="detail-cards"></div>
+          <div class="detail-columns">
+            <section>
+              <h3>핵심 기능</h3>
+              <ul class="project-points" id="detail-features"></ul>
+            </section>
+            <section>
+              <h3>내가 증명한 역량</h3>
+              <ul class="project-points" id="detail-tech"></ul>
+            </section>
+          </div>
+          <section class="detail-note">
+            <h3>강점 요약</h3>
+            <p id="detail-strength"></p>
+          </section>
+        </article>
       </section>
 
       <section id="mvp" class="section">
