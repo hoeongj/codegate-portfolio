@@ -1,24 +1,10 @@
-# Portfolio
+# Archived portfolio
 
-홍성주 개인 포트폴리오 정적 사이트.
+이 정적 포트폴리오는 운영을 종료했습니다. 최신 정보와 프로젝트 근거는 아래 두 곳에서
+관리합니다.
 
-## Local Preview
+- GitHub profile: <https://github.com/ghdtjdwn>
+- Engineering portfolio and blog: <https://seongju.vercel.app>
 
-```bash
-cd /Users/seongju/codegate-portfolio
-python3 -m http.server 5173
-```
-
-Open `http://localhost:5173`.
-
-## Deploy
-
-정적 파일만 사용하므로 GitHub Pages, Netlify, Vercel static project 어디에나 업로드 가능하다.
-
-## Main Assets
-
-- `assets/ssuai-live-home.png` - ssuAI 최신 라이브 홈 화면
-- `assets/ssuai-live-chat.png` - ssuAI 최신 라이브 챗봇 화면
-- `assets/geuneul-prototype.png` - 그늘 모바일 지도 프로토타입 캡처
-- `assets/ddsc-game.png` - 두근두근 자료구조 실제 플레이
-- `assets/condorm-match.png` - 참 도미 룸메이트 매칭 화면
+This repository is retained as a historical snapshot. GitHub Pages is disabled, and the site is
+no longer an official portfolio entry point.
